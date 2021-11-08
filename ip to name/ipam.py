@@ -4,7 +4,7 @@ import requests
 import sys
 
 if os.getenv('IPAM_TOKEN')=='None':
-    print('please set your ipam api token as IPAM_TOKEN')
+    print('please set your ipam api token as an env named IPAM_TOKEN')
     exit(0)
 if len(sys.argv) < 3 :
     print('please enter your ip file a the first arg and your domin as the second one ')
