@@ -17,7 +17,7 @@ for ip in ips :
     auth_header='Token {APITOKEN}'.format(APITOKEN=token)
     uri='https://{DOMIN}/api/ipam/ip-addresses'.format(DOMIN=sys.argv[2])
     response = requests.get(
-        'https://ipam.partdp.ir/api/ipam/ip-addresses',
+        uri,
         params={'q': ip},
         headers={ 'content-type': 'application/json' , 'Authorization' : auth_header },
     ) 
